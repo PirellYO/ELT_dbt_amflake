@@ -34,7 +34,9 @@
 
 ``` dbt test ```
 
+## Run snapshot
 
+``` dbt snapshot ``` 
 
 
 
