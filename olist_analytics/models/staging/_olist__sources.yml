@@ -1,0 +1,52 @@
+version: 2
+
+sources:
+  - name: olist_raw
+    description: "Raw data from Olist e-commerce platform"
+    database: OLIST
+    schema: RAW
+    tables:
+      - name: olist_customers
+        description: "Customer information"
+        columns:
+          - name: customer_id
+            tests: [unique, not_null]
+      - name: olist_geolocation
+        description: "Geolocation data for customers and sellers"
+        columns:
+          - name: geolocation_id
+            tests: [unique, not_null]
+      - name: olist_order_items
+        description: "Order items data"
+        columns:
+          - name: order_id
+            tests: [not_null]
+          - name: product_id
+            tests: [not_null]
+          - name: seller_id
+            tests: [not_null]
+      - name: olist_order_payments
+        description: "Order payments data"
+        columns:
+          - name: order_id
+            tests: [not_null]
+      - name: olist_order_reviews
+        description: "Order reviews data"
+        columns:
+          - name: order_id
+            tests: [not_null]
+      - name: olist_orders
+        description: "Orders data"
+        columns:
+          - name: order_id
+            tests: [unique, not_null]
+      - name: olist_products
+        description: "Products data"
+        columns:
+          - name: product_id
+            tests: [unique, not_null]
+      - name: olist_sellers
+        description: "Sellers data"
+        columns:
+          - name: seller_id
+            tests: [unique, not_null]

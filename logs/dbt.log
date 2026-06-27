@@ -1,0 +1,490 @@
+[0m09:19:07.656306 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 09:19:07.835911 | c2ee41b4-0322-41ae-a258-2d3e2496dbf8 ==============================
+[0m09:19:07.835911 [info ] [MainThread]: Running with dbt=1.11.11
+[0m09:19:07.837073 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tchalimot\\.dbt', 'invocation_command': 'dbt init olist_analytics', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m09:19:07.932112 [debug] [MainThread]: Starter project path: C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\venv\Lib\site-packages\dbt\include\starter_project
+[0m09:19:07.990948 [info ] [MainThread]: 
+Your new dbt project "olist_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:19:07.991923 [info ] [MainThread]: Setting up your profile.
+[0m09:19:18.594871 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:19:18.595641 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:19:18.596072 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:22:32.143603 [info ] [MainThread]: Profile olist_analytics written to C:\Users\tchalimot\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:22:32.146903 [debug] [MainThread]: Command `dbt init` succeeded at 09:22:32.146634 after 204.73 seconds
+[0m09:22:32.147538 [debug] [MainThread]: Flushing usage events
+[0m09:29:16.719295 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 09:29:16.940312 | 894d175b-7a6c-4286-a3fc-f69246e4c771 ==============================
+[0m09:29:16.940312 [info ] [MainThread]: Running with dbt=1.11.11
+[0m09:29:16.941967 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tchalimot\\.dbt', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m09:29:17.032312 [info ] [MainThread]: dbt version: 1.11.11
+[0m09:29:17.033003 [info ] [MainThread]: python version: 3.13.1
+[0m09:29:17.033616 [info ] [MainThread]: python path: C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\venv\Scripts\python.exe
+[0m09:29:17.034302 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m09:29:18.214553 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:29:18.215184 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:29:18.215674 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:29:18.331649 [info ] [MainThread]: Using profiles dir at C:\Users\tchalimot\.dbt
+[0m09:29:18.332583 [info ] [MainThread]: Using profiles.yml file at C:\Users\tchalimot\.dbt\profiles.yml
+[0m09:29:18.333216 [info ] [MainThread]: Using dbt_project.yml file at C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\dbt_project.yml
+[0m09:29:18.362608 [info ] [MainThread]: adapter type: snowflake
+[0m09:29:18.363471 [info ] [MainThread]: adapter version: 1.11.5
+[0m09:29:18.364194 [info ] [MainThread]: Configuration:
+[0m09:29:18.364752 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:29:18.365220 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:29:18.365703 [info ] [MainThread]: Required dependencies:
+[0m09:29:18.366255 [debug] [MainThread]: Executing "git --help"
+[0m09:29:18.563263 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:29:18.564380 [debug] [MainThread]: STDERR: "b''"
+[0m09:29:18.565236 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:29:18.566297 [info ] [MainThread]: Connection:
+[0m09:29:18.567297 [info ] [MainThread]:   account: Pirellyon
+[0m09:29:18.568121 [info ] [MainThread]:   user: Pirellyon
+[0m09:29:18.568845 [info ] [MainThread]:   database: OLIST
+[0m09:29:18.569621 [info ] [MainThread]:   warehouse: TRANSFORM_WH
+[0m09:29:18.570518 [info ] [MainThread]:   role: TRANSFORM
+[0m09:29:18.586669 [info ] [MainThread]:   schema: dev
+[0m09:29:18.587983 [info ] [MainThread]:   authenticator: None
+[0m09:29:18.588735 [info ] [MainThread]:   oauth_client_id: None
+[0m09:29:18.589440 [info ] [MainThread]:   query_tag: None
+[0m09:29:18.589984 [info ] [MainThread]:   client_session_keep_alive: False
+[0m09:29:18.590457 [info ] [MainThread]:   host: None
+[0m09:29:18.591866 [info ] [MainThread]:   port: None
+[0m09:29:18.597108 [info ] [MainThread]:   proxy_host: None
+[0m09:29:18.599478 [info ] [MainThread]:   proxy_port: None
+[0m09:29:18.600477 [info ] [MainThread]:   protocol: None
+[0m09:29:18.605198 [info ] [MainThread]:   connect_retries: 1
+[0m09:29:18.606345 [info ] [MainThread]:   connect_timeout: None
+[0m09:29:18.606936 [info ] [MainThread]:   retry_on_database_errors: False
+[0m09:29:18.607933 [info ] [MainThread]:   retry_all: False
+[0m09:29:18.609587 [info ] [MainThread]:   insecure_mode: False
+[0m09:29:18.611082 [info ] [MainThread]:   reuse_connections: True
+[0m09:29:18.614314 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m09:29:18.617030 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m09:29:18.620794 [info ] [MainThread]: Registered adapter: snowflake=1.11.5
+[0m09:29:20.329812 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m09:29:24.939784 [debug] [MainThread]: Using snowflake connection "debug"
+[0m09:29:24.940588 [debug] [MainThread]: On debug: select 1 as id
+[0m09:29:24.941014 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:29:28.121057 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m09:29:28.121951 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m09:29:28.128319 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m09:29:28.129897 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m09:29:28.130827 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\dbt_project.yml> not found
+
+[0m09:29:28.131525 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  290404 (08001): 404 Not Found: post Pirellyon.snowflakecomputing.com:443/session/v1/login-request
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m09:29:28.134359 [debug] [MainThread]: Command `dbt debug` failed at 09:29:28.134024 after 11.50 seconds
+[0m09:29:28.136139 [debug] [MainThread]: Connection 'debug' was left open.
+[0m09:29:28.137078 [debug] [MainThread]: On debug: No close available on handle
+[0m09:29:28.137601 [debug] [MainThread]: Flushing usage events
+[0m09:37:28.009693 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 09:37:28.193452 | 2611cfd0-2760-4a21-b950-6d73ca9fcfa3 ==============================
+[0m09:37:28.193452 [info ] [MainThread]: Running with dbt=1.11.11
+[0m09:37:28.194510 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tchalimot\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m09:37:28.269596 [info ] [MainThread]: dbt version: 1.11.11
+[0m09:37:28.270580 [info ] [MainThread]: python version: 3.13.1
+[0m09:37:28.271270 [info ] [MainThread]: python path: C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\venv\Scripts\python.exe
+[0m09:37:28.271846 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m09:37:29.517533 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:37:29.518233 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:37:29.518682 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:37:29.640302 [info ] [MainThread]: Using profiles dir at C:\Users\tchalimot\.dbt
+[0m09:37:29.641131 [info ] [MainThread]: Using profiles.yml file at C:\Users\tchalimot\.dbt\profiles.yml
+[0m09:37:29.641984 [info ] [MainThread]: Using dbt_project.yml file at C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\dbt_project.yml
+[0m09:37:29.644261 [info ] [MainThread]: adapter type: snowflake
+[0m09:37:29.645032 [info ] [MainThread]: adapter version: 1.11.5
+[0m09:37:29.645813 [info ] [MainThread]: Configuration:
+[0m09:37:29.646458 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:37:29.652182 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:37:29.653160 [info ] [MainThread]: Required dependencies:
+[0m09:37:29.654353 [debug] [MainThread]: Executing "git --help"
+[0m09:37:29.826080 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:37:29.826771 [debug] [MainThread]: STDERR: "b''"
+[0m09:37:29.827285 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:37:29.827918 [info ] [MainThread]: Connection:
+[0m09:37:29.828444 [info ] [MainThread]:   account: XA78541
+[0m09:37:29.829042 [info ] [MainThread]:   user: Pirellyon
+[0m09:37:29.829462 [info ] [MainThread]:   database: OLIST
+[0m09:37:29.829935 [info ] [MainThread]:   warehouse: TRANSFORM_WH
+[0m09:37:29.830325 [info ] [MainThread]:   role: TRANSFORM
+[0m09:37:29.830752 [info ] [MainThread]:   schema: dev
+[0m09:37:29.831138 [info ] [MainThread]:   authenticator: None
+[0m09:37:29.831579 [info ] [MainThread]:   oauth_client_id: None
+[0m09:37:29.832051 [info ] [MainThread]:   query_tag: None
+[0m09:37:29.832477 [info ] [MainThread]:   client_session_keep_alive: False
+[0m09:37:29.832953 [info ] [MainThread]:   host: None
+[0m09:37:29.834891 [info ] [MainThread]:   port: None
+[0m09:37:29.837032 [info ] [MainThread]:   proxy_host: None
+[0m09:37:29.842588 [info ] [MainThread]:   proxy_port: None
+[0m09:37:29.843575 [info ] [MainThread]:   protocol: None
+[0m09:37:29.844234 [info ] [MainThread]:   connect_retries: 1
+[0m09:37:29.845007 [info ] [MainThread]:   connect_timeout: None
+[0m09:37:29.853993 [info ] [MainThread]:   retry_on_database_errors: False
+[0m09:37:29.857384 [info ] [MainThread]:   retry_all: False
+[0m09:37:29.866903 [info ] [MainThread]:   insecure_mode: False
+[0m09:37:29.867796 [info ] [MainThread]:   reuse_connections: True
+[0m09:37:29.868935 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m09:37:29.869486 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m09:37:29.870646 [info ] [MainThread]: Registered adapter: snowflake=1.11.5
+[0m09:37:31.410466 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m09:37:31.752060 [debug] [MainThread]: Using snowflake connection "debug"
+[0m09:37:31.752705 [debug] [MainThread]: On debug: select 1 as id
+[0m09:37:31.753186 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:37:33.014636 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m09:37:33.015333 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m09:37:33.017192 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m09:37:33.018564 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m09:37:33.019353 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\dbt_project.yml> not found
+
+[0m09:37:33.020024 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  290404 (08001): 404 Not Found: post XA78541.snowflakecomputing.com:443/session/v1/login-request
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m09:37:33.022543 [debug] [MainThread]: Command `dbt debug` failed at 09:37:33.022273 after 5.10 seconds
+[0m09:37:33.023140 [debug] [MainThread]: Connection 'debug' was left open.
+[0m09:37:33.023583 [debug] [MainThread]: On debug: No close available on handle
+[0m09:37:33.023988 [debug] [MainThread]: Flushing usage events
+[0m09:38:14.536517 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 09:38:14.701331 | 724bf320-e22f-4c2f-ab47-9889906e03f6 ==============================
+[0m09:38:14.701331 [info ] [MainThread]: Running with dbt=1.11.11
+[0m09:38:14.702379 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tchalimot\\.dbt', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m09:38:14.769152 [info ] [MainThread]: dbt version: 1.11.11
+[0m09:38:14.770368 [info ] [MainThread]: python version: 3.13.1
+[0m09:38:14.772251 [info ] [MainThread]: python path: C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\venv\Scripts\python.exe
+[0m09:38:14.773165 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m09:38:16.038860 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:38:16.039618 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:38:16.040088 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:38:16.155114 [debug] [MainThread]: Snowflake adapter: Replaced underscores (_) with hyphens (-) in Snowflake account name to form a valid account URL.
+[0m09:38:16.162226 [info ] [MainThread]: Using profiles dir at C:\Users\tchalimot\.dbt
+[0m09:38:16.163264 [info ] [MainThread]: Using profiles.yml file at C:\Users\tchalimot\.dbt\profiles.yml
+[0m09:38:16.163955 [info ] [MainThread]: Using dbt_project.yml file at C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\dbt_project.yml
+[0m09:38:16.166077 [info ] [MainThread]: adapter type: snowflake
+[0m09:38:16.166870 [info ] [MainThread]: adapter version: 1.11.5
+[0m09:38:16.167642 [info ] [MainThread]: Configuration:
+[0m09:38:16.168188 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:38:16.170693 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:38:16.172657 [info ] [MainThread]: Required dependencies:
+[0m09:38:16.174560 [debug] [MainThread]: Executing "git --help"
+[0m09:38:16.372973 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:38:16.373779 [debug] [MainThread]: STDERR: "b''"
+[0m09:38:16.374490 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:38:16.376737 [info ] [MainThread]: Connection:
+[0m09:38:16.378106 [info ] [MainThread]:   account: XA78541.AWS-EU-WEST-3
+[0m09:38:16.378966 [info ] [MainThread]:   user: Pirellyon
+[0m09:38:16.379617 [info ] [MainThread]:   database: OLIST
+[0m09:38:16.380290 [info ] [MainThread]:   warehouse: TRANSFORM_WH
+[0m09:38:16.381432 [info ] [MainThread]:   role: TRANSFORM
+[0m09:38:16.383786 [info ] [MainThread]:   schema: dev
+[0m09:38:16.385082 [info ] [MainThread]:   authenticator: None
+[0m09:38:16.385919 [info ] [MainThread]:   oauth_client_id: None
+[0m09:38:16.386694 [info ] [MainThread]:   query_tag: None
+[0m09:38:16.387493 [info ] [MainThread]:   client_session_keep_alive: False
+[0m09:38:16.388659 [info ] [MainThread]:   host: None
+[0m09:38:16.389676 [info ] [MainThread]:   port: None
+[0m09:38:16.394020 [info ] [MainThread]:   proxy_host: None
+[0m09:38:16.395928 [info ] [MainThread]:   proxy_port: None
+[0m09:38:16.397019 [info ] [MainThread]:   protocol: None
+[0m09:38:16.398034 [info ] [MainThread]:   connect_retries: 1
+[0m09:38:16.398802 [info ] [MainThread]:   connect_timeout: None
+[0m09:38:16.399542 [info ] [MainThread]:   retry_on_database_errors: False
+[0m09:38:16.400280 [info ] [MainThread]:   retry_all: False
+[0m09:38:16.401217 [info ] [MainThread]:   insecure_mode: False
+[0m09:38:16.402477 [info ] [MainThread]:   reuse_connections: True
+[0m09:38:16.403574 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m09:38:16.404294 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m09:38:16.405762 [info ] [MainThread]: Registered adapter: snowflake=1.11.5
+[0m09:38:17.901050 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m09:38:18.213400 [debug] [MainThread]: Using snowflake connection "debug"
+[0m09:38:18.214057 [debug] [MainThread]: On debug: select 1 as id
+[0m09:38:18.214432 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:38:19.597453 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m09:38:19.598086 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m09:38:19.599862 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m09:38:19.601247 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m09:38:19.602184 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\dbt_project.yml> not found
+
+[0m09:38:19.603151 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  290404 (08001): 404 Not Found: post XA78541.AWS-EU-WEST-3.snowflakecomputing.com:443/session/v1/login-request
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m09:38:19.609082 [debug] [MainThread]: Command `dbt debug` failed at 09:38:19.608826 after 5.16 seconds
+[0m09:38:19.609684 [debug] [MainThread]: Connection 'debug' was left open.
+[0m09:38:19.610120 [debug] [MainThread]: On debug: No close available on handle
+[0m09:38:19.610516 [debug] [MainThread]: Flushing usage events
+[0m09:39:32.677262 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 09:39:32.838526 | ce33fdbb-6bcc-41c4-80ad-fe84b5b4f6a6 ==============================
+[0m09:39:32.838526 [info ] [MainThread]: Running with dbt=1.11.11
+[0m09:39:32.839609 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tchalimot\\.dbt', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m09:39:32.909495 [info ] [MainThread]: dbt version: 1.11.11
+[0m09:39:32.910295 [info ] [MainThread]: python version: 3.13.1
+[0m09:39:32.910931 [info ] [MainThread]: python path: C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\venv\Scripts\python.exe
+[0m09:39:32.911404 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m09:39:34.158095 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:39:34.158791 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:39:34.159207 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:39:34.277838 [info ] [MainThread]: Using profiles dir at C:\Users\tchalimot\.dbt
+[0m09:39:34.282909 [info ] [MainThread]: Using profiles.yml file at C:\Users\tchalimot\.dbt\profiles.yml
+[0m09:39:34.289492 [info ] [MainThread]: Using dbt_project.yml file at C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\dbt_project.yml
+[0m09:39:34.305867 [info ] [MainThread]: adapter type: snowflake
+[0m09:39:34.314922 [info ] [MainThread]: adapter version: 1.11.5
+[0m09:39:34.316749 [info ] [MainThread]: Configuration:
+[0m09:39:34.317852 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:39:34.318669 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:39:34.320028 [info ] [MainThread]: Required dependencies:
+[0m09:39:34.325296 [debug] [MainThread]: Executing "git --help"
+[0m09:39:34.492556 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:39:34.493248 [debug] [MainThread]: STDERR: "b''"
+[0m09:39:34.494491 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:39:34.495412 [info ] [MainThread]: Connection:
+[0m09:39:34.496059 [info ] [MainThread]:   account: XA78541.eu-west-3-aws
+[0m09:39:34.496532 [info ] [MainThread]:   user: Pirellyon
+[0m09:39:34.497004 [info ] [MainThread]:   database: OLIST
+[0m09:39:34.497416 [info ] [MainThread]:   warehouse: TRANSFORM_WH
+[0m09:39:34.497815 [info ] [MainThread]:   role: TRANSFORM
+[0m09:39:34.498247 [info ] [MainThread]:   schema: dev
+[0m09:39:34.498627 [info ] [MainThread]:   authenticator: None
+[0m09:39:34.499058 [info ] [MainThread]:   oauth_client_id: None
+[0m09:39:34.499435 [info ] [MainThread]:   query_tag: None
+[0m09:39:34.499806 [info ] [MainThread]:   client_session_keep_alive: False
+[0m09:39:34.500231 [info ] [MainThread]:   host: None
+[0m09:39:34.501261 [info ] [MainThread]:   port: None
+[0m09:39:34.502919 [info ] [MainThread]:   proxy_host: None
+[0m09:39:34.503656 [info ] [MainThread]:   proxy_port: None
+[0m09:39:34.504230 [info ] [MainThread]:   protocol: None
+[0m09:39:34.505028 [info ] [MainThread]:   connect_retries: 1
+[0m09:39:34.506129 [info ] [MainThread]:   connect_timeout: None
+[0m09:39:34.506833 [info ] [MainThread]:   retry_on_database_errors: False
+[0m09:39:34.508251 [info ] [MainThread]:   retry_all: False
+[0m09:39:34.508987 [info ] [MainThread]:   insecure_mode: False
+[0m09:39:34.509647 [info ] [MainThread]:   reuse_connections: True
+[0m09:39:34.510628 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m09:39:34.512936 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m09:39:34.516374 [info ] [MainThread]: Registered adapter: snowflake=1.11.5
+[0m09:39:36.034197 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m09:39:36.352913 [debug] [MainThread]: Using snowflake connection "debug"
+[0m09:39:36.353433 [debug] [MainThread]: On debug: select 1 as id
+[0m09:39:36.353784 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:39:37.658360 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m09:39:37.659315 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m09:39:37.662100 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m09:39:37.665331 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m09:39:37.666460 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\dbt_project.yml> not found
+
+[0m09:39:37.667275 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  290404 (08001): 404 Not Found: post XA78541.eu-west-3-aws.snowflakecomputing.com:443/session/v1/login-request
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m09:39:37.670696 [debug] [MainThread]: Command `dbt debug` failed at 09:39:37.670271 after 5.08 seconds
+[0m09:39:37.671913 [debug] [MainThread]: Connection 'debug' was left open.
+[0m09:39:37.672629 [debug] [MainThread]: On debug: No close available on handle
+[0m09:39:37.673346 [debug] [MainThread]: Flushing usage events
+[0m09:44:57.726804 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 09:44:57.930283 | 1274631f-58b9-4f3e-ae4c-dd0d1427d0e4 ==============================
+[0m09:44:57.930283 [info ] [MainThread]: Running with dbt=1.11.11
+[0m09:44:57.931359 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tchalimot\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m09:44:57.999016 [info ] [MainThread]: dbt version: 1.11.11
+[0m09:44:57.999884 [info ] [MainThread]: python version: 3.13.1
+[0m09:44:58.000644 [info ] [MainThread]: python path: C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\venv\Scripts\python.exe
+[0m09:44:58.001222 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m09:44:59.305956 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:44:59.306702 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:44:59.307251 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:44:59.456053 [info ] [MainThread]: Using profiles dir at C:\Users\tchalimot\.dbt
+[0m09:44:59.457539 [info ] [MainThread]: Using profiles.yml file at C:\Users\tchalimot\.dbt\profiles.yml
+[0m09:44:59.458492 [info ] [MainThread]: Using dbt_project.yml file at C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\dbt_project.yml
+[0m09:44:59.472367 [info ] [MainThread]: adapter type: snowflake
+[0m09:44:59.474319 [info ] [MainThread]: adapter version: 1.11.5
+[0m09:44:59.476637 [info ] [MainThread]: Configuration:
+[0m09:44:59.481153 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:44:59.484061 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:44:59.484952 [info ] [MainThread]: Required dependencies:
+[0m09:44:59.490060 [debug] [MainThread]: Executing "git --help"
+[0m09:44:59.668886 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:44:59.670010 [debug] [MainThread]: STDERR: "b''"
+[0m09:44:59.670846 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:44:59.671535 [info ] [MainThread]: Connection:
+[0m09:44:59.672210 [info ] [MainThread]:   account: AOJBPHO-XA78541
+[0m09:44:59.672869 [info ] [MainThread]:   user: Pirellyon
+[0m09:44:59.673510 [info ] [MainThread]:   database: OLIST
+[0m09:44:59.674160 [info ] [MainThread]:   warehouse: TRANSFORM_WH
+[0m09:44:59.674753 [info ] [MainThread]:   role: TRANSFORM
+[0m09:44:59.675259 [info ] [MainThread]:   schema: dev
+[0m09:44:59.675723 [info ] [MainThread]:   authenticator: None
+[0m09:44:59.676228 [info ] [MainThread]:   oauth_client_id: None
+[0m09:44:59.677230 [info ] [MainThread]:   query_tag: None
+[0m09:44:59.678800 [info ] [MainThread]:   client_session_keep_alive: False
+[0m09:44:59.679808 [info ] [MainThread]:   host: None
+[0m09:44:59.680621 [info ] [MainThread]:   port: None
+[0m09:44:59.681325 [info ] [MainThread]:   proxy_host: None
+[0m09:44:59.682650 [info ] [MainThread]:   proxy_port: None
+[0m09:44:59.683510 [info ] [MainThread]:   protocol: None
+[0m09:44:59.684281 [info ] [MainThread]:   connect_retries: 1
+[0m09:44:59.684888 [info ] [MainThread]:   connect_timeout: None
+[0m09:44:59.688792 [info ] [MainThread]:   retry_on_database_errors: False
+[0m09:44:59.689751 [info ] [MainThread]:   retry_all: False
+[0m09:44:59.690558 [info ] [MainThread]:   insecure_mode: False
+[0m09:44:59.691125 [info ] [MainThread]:   reuse_connections: True
+[0m09:44:59.691680 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m09:44:59.692184 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m09:44:59.693353 [info ] [MainThread]: Registered adapter: snowflake=1.11.5
+[0m09:45:01.372525 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m09:45:01.676562 [debug] [MainThread]: Using snowflake connection "debug"
+[0m09:45:01.677074 [debug] [MainThread]: On debug: select 1 as id
+[0m09:45:01.677458 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:45:03.557959 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.875 seconds
+[0m09:45:03.560474 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:45:03.561586 [info ] [MainThread]: [31m1 check failed:[0m
+[0m09:45:03.563054 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\dbt_project.yml> not found
+
+[0m09:45:03.566919 [debug] [MainThread]: Command `dbt debug` failed at 09:45:03.566537 after 5.93 seconds
+[0m09:45:03.567780 [debug] [MainThread]: Connection 'debug' was left open.
+[0m09:45:03.568377 [debug] [MainThread]: On debug: Close
+[0m09:45:03.773625 [debug] [MainThread]: Flushing usage events
+[0m09:46:34.275480 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 09:46:34.480221 | cd86f150-3b85-4b9a-9dfe-d16e173d859b ==============================
+[0m09:46:34.480221 [info ] [MainThread]: Running with dbt=1.11.11
+[0m09:46:34.482265 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\tchalimot\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m09:46:34.571716 [info ] [MainThread]: dbt version: 1.11.11
+[0m09:46:34.572752 [info ] [MainThread]: python version: 3.13.1
+[0m09:46:34.573391 [info ] [MainThread]: python path: C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\venv\Scripts\python.exe
+[0m09:46:34.573959 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m09:46:36.444985 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:46:36.446101 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:46:36.446613 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:46:36.614593 [info ] [MainThread]: Using profiles dir at C:\Users\tchalimot\.dbt
+[0m09:46:36.616080 [info ] [MainThread]: Using profiles.yml file at C:\Users\tchalimot\.dbt\profiles.yml
+[0m09:46:36.617096 [info ] [MainThread]: Using dbt_project.yml file at C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\dbt_project.yml
+[0m09:46:36.622144 [info ] [MainThread]: adapter type: snowflake
+[0m09:46:36.623103 [info ] [MainThread]: adapter version: 1.11.5
+[0m09:46:36.624886 [info ] [MainThread]: Configuration:
+[0m09:46:36.626727 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:46:36.627685 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:46:36.628555 [info ] [MainThread]: Required dependencies:
+[0m09:46:36.629528 [debug] [MainThread]: Executing "git --help"
+[0m09:46:36.849271 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:46:36.849968 [debug] [MainThread]: STDERR: "b''"
+[0m09:46:36.850486 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:46:36.851540 [info ] [MainThread]: Connection:
+[0m09:46:36.852242 [info ] [MainThread]:   account: AOJBPHO-XA78541
+[0m09:46:36.853482 [info ] [MainThread]:   user: Pirellyon
+[0m09:46:36.854159 [info ] [MainThread]:   database: OLIST
+[0m09:46:36.854830 [info ] [MainThread]:   warehouse: TRANSFORM_WH
+[0m09:46:36.855394 [info ] [MainThread]:   role: TRANSFORM
+[0m09:46:36.855839 [info ] [MainThread]:   schema: dev
+[0m09:46:36.856322 [info ] [MainThread]:   authenticator: None
+[0m09:46:36.856727 [info ] [MainThread]:   oauth_client_id: None
+[0m09:46:36.857616 [info ] [MainThread]:   query_tag: None
+[0m09:46:36.858576 [info ] [MainThread]:   client_session_keep_alive: False
+[0m09:46:36.860832 [info ] [MainThread]:   host: None
+[0m09:46:36.861754 [info ] [MainThread]:   port: None
+[0m09:46:36.862848 [info ] [MainThread]:   proxy_host: None
+[0m09:46:36.863511 [info ] [MainThread]:   proxy_port: None
+[0m09:46:36.864143 [info ] [MainThread]:   protocol: None
+[0m09:46:36.864757 [info ] [MainThread]:   connect_retries: 1
+[0m09:46:36.865582 [info ] [MainThread]:   connect_timeout: None
+[0m09:46:36.867607 [info ] [MainThread]:   retry_on_database_errors: False
+[0m09:46:36.869942 [info ] [MainThread]:   retry_all: False
+[0m09:46:36.872582 [info ] [MainThread]:   insecure_mode: False
+[0m09:46:36.873428 [info ] [MainThread]:   reuse_connections: True
+[0m09:46:36.874693 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m09:46:36.875359 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m09:46:36.876642 [info ] [MainThread]: Registered adapter: snowflake=1.11.5
+[0m09:46:39.087861 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m09:46:39.558196 [debug] [MainThread]: Using snowflake connection "debug"
+[0m09:46:39.558909 [debug] [MainThread]: On debug: select 1 as id
+[0m09:46:39.559522 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:46:41.534418 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.969 seconds
+[0m09:46:41.537927 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:46:41.539679 [info ] [MainThread]: [31m1 check failed:[0m
+[0m09:46:41.541441 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\dbt_project.yml> not found
+
+[0m09:46:41.546696 [debug] [MainThread]: Command `dbt debug` failed at 09:46:41.546154 after 7.37 seconds
+[0m09:46:41.547748 [debug] [MainThread]: Connection 'debug' was left open.
+[0m09:46:41.548447 [debug] [MainThread]: On debug: Close
+[0m09:46:41.755804 [debug] [MainThread]: Flushing usage events
+[0m10:23:59.560772 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 10:23:59.641532 | 335d8d73-d869-4bd9-a319-e8df33d3ca15 ==============================
+[0m10:23:59.641532 [info ] [MainThread]: Running with dbt=1.11.11
+[0m10:23:59.642013 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tchalimot\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select intermediate', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m10:23:59.642328 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\BATIMAT\DATA ENG\olist_aws_snowflake_dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:23:59.643466 [debug] [MainThread]: Command `dbt run` failed at 10:23:59.643354 after 0.15 seconds
+[0m10:23:59.644315 [debug] [MainThread]: Flushing usage events
