@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: stg_olist__orders
+    description: "Cleansed comands, 1 line par command, with timestamps converted to datetime format."
+    columns:
+      - name: order_id
+        tests: [unique, not_null]
+      - name: customer_id
+        tests: 
+          - not_null
+          - relationships:
+              to: ref('stg_olist__customers')
+              field: customer_id
+      - name: order_status
+        description: "Current status of the order."
+        tests: 
+          - accepted_values:
+              values: ['created', 'approved', 'invoiced', 'processing', 'shipped', 'delivered', 'canceled', 'unavailable']
+  - name: stg_olist__order_items
+    description: "Cleansed order items, 1 line par item, with timestamps converted to datetime format."
+    columns:
+      - name: order_id
+        tests: 
+          - not_null
+          - relationships:
+              to: ref('stg_olist__orders')
+              field: order_id
+      - name: product_id
+        tests: 
+          - not_null
+          - relationships:
+              to: ref('stg_olist__products')
+              field: product_id
+      - name: seller_id
+        tests: 
+          - not_null
+          - relationships:
+              to: ref('stg_olist__sellers')
+              field: seller_id
+  - name: stg_olist__order_reviews
+    description: "Cleansed order reviews, 1 line par review, with timestamps converted to datetime format."
+    columns:
+      - name: review_score
+        tests:
+          - not_null
+          - accepted_values:
+                values: [1, 2, 3, 4, 5]
+                quote: false

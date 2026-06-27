@@ -30,6 +30,11 @@
 ## Run a specific model
 ``` dbt run --select "name_model" ```
 
+## Run tests
+
+``` dbt test ```
+
+
 
 
 

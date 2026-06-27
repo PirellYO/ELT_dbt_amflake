@@ -20,18 +20,17 @@ item_stats as (
 final as (
     select
         p.product_id,
-        coalesce(ct.category_name_english, p.category_name_pt, 'Unknown') as category_name,
-        p.category_name_pt,
+        coalesce(ct.product_category_name_english, p.category_name, 'Unknown') as category_name,
         p.weight_g,
         p.length_cm,
         p.height_cm,
         p.width_cm,
-        p.nb_times_sold,
+        s.nb_times_sold,
         s.avg_price,
         s.total_revenue,
 
     from products p
-    left join category_translations ct on p.category_name_pt = ct.category_name
+    left join category_translations ct on p.category_name = ct.product_category_name
     left join item_stats s on p.product_id = s.product_id
 )
 

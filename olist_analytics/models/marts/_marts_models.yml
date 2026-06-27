@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "Fait des commandes, 1 ligne par commande"
+    columns:
+      - name: order_id
+        tests: [unique, not_null]
+      - name: customer_unique_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_customers')
+                field: customer_unique_id
+      - name: review_score
+        tests:
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+              quote: false
+              where: "review_score is not null"
+
+  - name: fct_order_items
+    columns:
+      - name: order_item_pk
+        tests: [unique, not_null]
+      - name: order_id
+        tests: [not_null]
+
+  - name: dim_customers
+    columns:
+      - name: customer_unique_id
+        tests: [unique, not_null]
+      - name: customer_segment
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['loyal', 'repeat', 'one-time']
+
+  - name: dim_products
+    columns:
+      - name: product_id
+        tests: [unique, not_null]
+
+  - name: dim_sellers
+    columns:
+      - name: seller_id
+        tests: [unique, not_null]

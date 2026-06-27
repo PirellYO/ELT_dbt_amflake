@@ -6,7 +6,7 @@ aggregated as (
     select
         order_id,
         count(*) as payment_count,
-        sum(payment_valued) as total_paid,
+        sum(payment_value) as total_paid,
         max(nb_installments) as max_installments,
         max(payment_type) as payment_type_sample
     from payments
